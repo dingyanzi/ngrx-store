@@ -1,0 +1,24 @@
+<app-stones-top [sidenav]="sidenav" (change)="resetLang()"></app-stones-top>
+
+<div class="ribbon">
+  <a href="https://github.com/jiwenjiang/ng4-material2" target="_blank">在GitHub上找我</a>
+</div>
+
+<md-sidenav-container class="stones-container">
+  <md-sidenav #sidenav class="example-sidenav sideNavWidth">
+    <ul class="top">
+      <md-nav-list>
+        <md-list-item *ngFor="let link of menus;let i = index;" routerLink="{{link.link}}"
+                      [class.nav-active]="i==curItem" (click)="changeNav(i)">
+          <a mdLine > <i class="icon {{link.icon}}"></i>&nbsp;{{ link.text }}</a>
+        </md-list-item>
+      </md-nav-list>
+    </ul>
+
+  </md-sidenav>
+  <div class="example-sidenav-content">
+    <div class="sidenav-container">
+      <router-outlet [@routeAnimation]="'true'"></router-outlet>
+    </div>
+  </div>
+</md-sidenav-container>

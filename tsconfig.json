@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@componets/*":["app/components/*"],
+      "@service/*":["app/service/*"],
+      "@config/*":["app/config/*"],
+      "@utils/*":["app/utils/*"],
+      "@myanimations/*":["app/animations/*"],
+      "@ngrx/*":["app/ngrx/*"],
+      "@assets/*":["assets/*"]
+    }
+  }
+}

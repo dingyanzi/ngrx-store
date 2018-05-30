@@ -1,0 +1,9 @@
+摘要地址：https://segmentfault.com/a/1190000011451379
+
+
+技术栈：
+angular4+material2+ngrx 
+
+
+1.npm install
+2.npm install --save @angular/material
